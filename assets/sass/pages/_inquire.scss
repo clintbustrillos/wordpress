@@ -1,0 +1,32 @@
+.page-inquire{
+	>.call-to-action{
+		height: 100vh;
+	    background-position: center;
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    display:flex;
+	    align-items: center;
+	    justify-content: center;
+		>.container{
+			>.inquire-form{
+		    	background-color: $black;
+		    	padding:60px;
+		    	@include breakpoint(md){
+    			.fields{
+	    			margin-bottom: 8px;
+	    			width:100% !important;
+			    		}
+		    	}
+	    		>.action-form{
+	                .fields, .btn{
+	                	height:60px;
+	                }
+	                .fields{
+	                	margin-right: 8px;
+	                	width: calc(25% - 8px);
+	                }
+	            }
+			}
+		}
+	}
+}

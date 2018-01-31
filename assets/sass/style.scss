@@ -1,0 +1,59 @@
+/*!
+Theme Name: Yello Hotel
+Theme URI: https://underscores.me/
+Author: Clint Bustrillos
+Author URI: https://sym.ph/
+Description: A theme for Yello
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: yello
+Tags:
+*/
+
+/* 1. Configuration and helpers*/
+@import
+  'abstract/reset',
+  'abstract/variables',
+  'abstract/mixin';
+
+/* 2. Vendors*/
+@import
+  'vendor/normalize',
+  'vendor/html5',
+  'vendor/font-awesome',
+  'vendor/bootstrap';
+
+/* 3. Modules*/
+@import
+  'modules/fonts',
+  'modules/base',
+  'modules/helper',
+  'modules/mediaqueries',
+  'modules/buttons',
+  'modules/dropdown';
+
+/* 4. Layout-related sections */
+@import
+  'layout/header',
+  'layout/footer',
+  'layout/contact-us';
+
+/* 5. Components*/
+@import
+   'components/*.scss';
+
+/* 6. Page-specific styles*/
+ @import
+   'pages/blog',
+   'pages/head',
+   'pages/front',
+   'pages/room',
+   'pages/contact',
+   'pages/about',
+   'pages/specificroom',
+   'pages/inquire'; 
+
+/* 7. Overwritten Vendors */
+@import
+   'vendor-extension/bootstrap';

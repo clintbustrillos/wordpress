@@ -1,0 +1,21 @@
+.socialmedia-links{
+	padding-left: 0;
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	>li{
+		padding-right: 16px;
+		a{
+			font-size: 16px;
+			opacity: 0.7;
+			color: $black;
+			&:hover,&:focus{
+				opacity: 1;
+			}
+			&:active{
+				position: relative;
+				top: 1px;
+			}
+		}
+	}
+}

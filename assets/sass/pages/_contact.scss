@@ -1,0 +1,53 @@
+.page-contact{
+	section{
+		padding: 40px 0;
+	}
+	>.content{
+		h3{
+			padding-bottom: 8px;
+		}
+		p{
+			font-family: $rway;
+			font-size: 19px;
+			line-height: 1.37;
+			text-align: center;
+			color: $black;
+		}
+	}
+	h6{
+		padding-bottom: 20px;
+	}
+}
+
+.socialmedia-links{
+	a{
+		opacity: 1;
+		&:hover{
+			color: $primary;
+		}
+	}
+}
+.form-group{
+	.input{
+		border:none;
+		border-radius: 0;
+	}
+}
+@include breakpoint(sm){
+	.contact-details{
+		margin-top: 40px;
+		order:2;
+	}
+	.contact-form{
+		order:1;
+	}
+}
+div.wpcf7-mail-sent-ok{
+	border:none;
+	color: $success !important;
+}
+
+div.wpcf7-validation-errors{
+	border:none;
+	color: red !important;
+}

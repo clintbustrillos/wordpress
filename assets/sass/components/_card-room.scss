@@ -1,0 +1,32 @@
+.card-room{
+	@include flexbox(row);
+	margin-bottom: 20px;
+	background-color: $white;
+	>.room-img{
+		@include background;
+		width: 40%;
+	}
+	>.room-details{
+		width: 60%;
+		padding: 30px;
+		>p{
+			padding-bottom: 20px;
+		}
+
+	}
+	@include breakpoint(sm){
+		@include flexbox(col);
+		>.room-img{
+		width: 100%;
+		height:200px;
+		}
+		>.room-details{
+			width: 100%;
+			padding: 30px;
+			>p{
+				padding-bottom: 20px;
+			}
+
+		}
+	}
+}

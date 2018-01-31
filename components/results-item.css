@@ -1,0 +1,13 @@
+.results-item {
+  padding: 15px 0; }
+  .results-item > h6 {
+    color: #F7C328; }
+  .results-item > p {
+    padding: 10px 0; }
+  .results-item > hr {
+    width: 100%;
+    border-width: 1px;
+    border-color: #e2e2e2;
+    margin: 0; }
+
+/*# sourceMappingURL=../maps/components/results-item.css.map */

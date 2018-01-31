@@ -1,0 +1,6 @@
+.section-header{
+	min-height: 250px;
+    display: flex;
+    align-items: center;
+   	@include background;
+}

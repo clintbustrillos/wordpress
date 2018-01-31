@@ -1,0 +1,18 @@
+.card-blog{
+	>img{
+		width: 100%;
+	}
+	margin-top:30px;
+	>h5{
+		margin-top: 20px;
+	}
+	>p{
+		margin:4px 0;
+	}
+	>a{
+		color: $primary;
+		&:hover{
+			text-decoration: none;
+		}
+	}
+}

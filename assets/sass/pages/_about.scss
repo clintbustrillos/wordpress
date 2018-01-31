@@ -1,0 +1,39 @@
+.page-about{
+		padding-top: 80px;
+	>.content{
+		
+		background-color: $offwhite;
+		.panel1{
+			background-color: $white;
+			padding: 80px;
+			p{
+				padding-bottom: 20px;
+			}
+			h1,h2,h3,h4,h5,h6{
+				padding-bottom: 8px;
+			}
+		}
+		.panel2{
+			background-color: $white;
+			padding: 80px;
+		}
+		.panel3{
+			background-color: $white;
+			padding: 80px;
+		}
+	}
+
+	@include breakpoint(md){
+		.panel-menu{
+			@include flexbox(row);
+			justify-content: center;
+			>.panel-items{
+				margin:0 10px;
+			}
+		}
+		.panel-content{
+			margin-top: 40px;
+		}
+	}
+
+}

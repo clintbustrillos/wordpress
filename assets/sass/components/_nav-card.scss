@@ -1,0 +1,106 @@
+header{
+	position: fixed;
+    z-index: 99;
+    width: 100%;
+	background: #FFFFFF;
+	box-shadow: 0 2px 8px 0 rgba(0,0,0,0.05);
+	height: 80px;
+	.nav-card{
+		margin:0 40px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		.site-branding{
+
+	}
+	.logo{
+		margin-top: 6px;
+	}
+	.main-navigation .menu{
+		@include flexbox(row);
+		align-items: center;
+		padding-left: 0;
+		li {
+			list-style: none;
+			margin: 0px 10px;
+		}
+		li.current-menu-item a {
+			text-decoration:none;
+			border-bottom:2px solid $primary;
+		}
+		li:not(:last-of-type){
+			a {
+				font-family: $rway-sb;
+				font-size: 13px;
+				color: $black;
+				letter-spacing: 1px;
+				line-height: 40px;
+				text-transform: uppercase;
+				padding-bottom:10px;
+				&:hover {
+					text-decoration:none;
+					border-bottom:2px solid $primary;
+				}
+			}
+				
+			
+		}	
+	}
+		ul{
+			margin-top:15px;
+		}
+
+		.cta{
+		 	background-color: $primary;
+		    padding: 14px 24px ;
+		    text-align: center; 
+		    text-decoration: none;
+		    text-transform: uppercase;
+	    	&:hover{
+	    		border: none !important;
+	    		background: darken($primary,10%) !important;
+				@include transition;
+				a{
+					text-decoration:none;
+				}
+			}
+		    a {
+		    	color:$white !important;
+		    	}	    
+		}
+	}	
+}
+.navbar-default{
+	background-color:$white;
+	border:none;
+}
+
+.navbar-brand{
+	height:100%;
+	padding:5px 15px;
+}
+
+.navbar-toggle{
+	margin-top:20px;
+	border:none;
+}
+
+.navbar-collapse{
+	background-color: #252525;
+	ul{
+		padding: 10px 20px;
+		list-style:none;
+		li{
+			text-align: center;
+			padding: 10px 0;
+			a{
+				color: $white;
+				&:hover, &:active, &:focus{
+					text-decoration: none;
+					color: $primary;
+				}
+			}
+		}
+	}
+
+}

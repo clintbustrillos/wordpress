@@ -1,0 +1,31 @@
+.btn {
+    font-family: $rway-b;
+    font-size: 13px;
+    color: $white;
+    letter-spacing: 1px;
+    line-height: 39px;
+    text-transform: uppercase;
+    background-color: $primary;
+    padding:0 20px;
+    border-radius: 0;
+
+    &.-white{
+        color: $black;
+        background-color: $white;
+    }
+    &.-big{
+        height:50px;
+        padding: 30px;
+        font-size: 16px;
+        letter-spacing: 1.23px;
+        line-height: 49px;
+    }
+    
+}
+
+
+.btn.focus, .btn:focus, .btn:hover {
+    color: $white !important;
+    background: darken($primary,10%) !important;
+    @include transition;
+}

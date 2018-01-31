@@ -1,0 +1,26 @@
+.page-head{
+
+	.navbar{
+		position: fixed;
+        z-index: 99999;
+        width: 100%;
+		.main-nav {
+			display: -webkit-flex;
+	  		display: flex;
+		  	background: #FFFFFF;
+			box-shadow: 0 2px 8px 0 rgba(0,0,0,0.05);
+			height: 80px;
+			ul{
+				list-style: none;
+				li:first-child {
+			 	margin-right: auto;
+				}
+				li{
+					img{
+						margin-top: 6px;
+					}
+				}
+			}
+		}
+	}	
+}

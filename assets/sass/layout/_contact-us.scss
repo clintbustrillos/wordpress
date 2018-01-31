@@ -1,0 +1,46 @@
+.contactus{
+    @include breakpoint(xs){
+        
+    }
+
+    .form-control {
+        height: 37px;
+
+        @media (min-width: 480px) {
+            margin-bottom: 20px;
+        }
+    }
+
+    textarea {
+        &.form-control {
+            height: auto;
+        }
+    }
+}
+
+div.wpcf7 {
+    .screen-reader-response {
+        top: -60px;
+        
+        &.sent {
+            transition: transform 0.5s ease-in-out, top 0.5s ease-in-out;
+            position: fixed;
+            top: 0px;
+            width: 100%;
+            height: auto;
+            left: 0px;
+            clip: unset;
+            padding: 10px;
+            color: #fff;
+            z-index: 100000;
+            text-align: center;
+            background-color: #dc6a28;
+            transform: translateY(0%);
+        }
+
+        &.up {
+            transform: translateY(-100%);
+        }
+        
+    }
+} 
